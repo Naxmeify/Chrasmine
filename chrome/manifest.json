@@ -1,3 +1,15 @@
 {
-  
+  "name": "Chrasmine",
+  "version": "0.0.1",
+  "description": "",
+  "app": {
+    "launch": {
+      "local_path": "app/main.html"
+    }
+  },
+  "permissions":["cookies", "storage", "http://*/*", "https://*/*"],
+  "icons": { "16": "img/chrasmine-16.png", "128": "img/chrasmine-128.png" },
+  "manifest_version": 2,
+  "content_security_policy": "default-src 'self'; connect-src *; script-src 'self'; style-src * blob: data: filesystem: 'unsafe-inline'; img-src *; frame-src * blob: data: filesystem:; font-src * blob: data: filesystem:; media-src *;",
+  "offline_enabled": true
 }
