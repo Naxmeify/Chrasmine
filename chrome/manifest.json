@@ -3,8 +3,11 @@
   "version": "0.0.1",
   "description": "",
   "app": {
-    "launch": {
-      "local_path": "app/main.html"
+    //"launch": {
+    //  "local_path": "app/main.html"
+    //}
+    "background": {
+      "scripts": ["app/background.js"]
     }
   },
   "permissions":["cookies", "storage", "http://*/*", "https://*/*"],
